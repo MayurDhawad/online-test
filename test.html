@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Incrivel Test</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="assets/css/test.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <section>
+        <div class="container">
+            <div class="home-box custom-box">
+                <h3>Instructions :</h3>
+                <p>Total no of questions : <span class="total-question"> </span></p>
+                <button type="button" class="btn1" onclick="startQuiz()">Start Quiz</button>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <div class="quiz-box custom-box hide">
+                <div class="question-number">
+                    
+                </div>
+                <div class="question-text">
+                    
+                </div>
+                <div class="option-container">
+                    <div class="option">
+                        <div class="form-check">
+                            <input class="form-check-input answer" type="radio" name="answer" id="ans1">
+                            <label class="form-check-label opt1" id="option1">
+                              Default checked radio
+                            </label>
+                          </div>
+                    </div>
+                    <div class="option">
+                        <div class="form-check">
+                            <input class="form-check-input answert" type="radio" name="answer" id="ans2">
+                            <label class="form-check-label opt2" id="option1">
+                              Default checked radio
+                            </label>
+                          </div>
+                    </div>
+                    <div class="option">
+                        <div class="form-check">
+                            <input class="form-check-input answer" type="radio" name="answer" id="ans3">
+                            <label class="form-check-label opt3" id="option1">
+                              Default checked radio
+                            </label>
+                          </div>
+                    </div>
+                    <div class="option">
+                        <div class="form-check">
+                            <input class="form-check-input answer" type="radio" name="answer" id="ans4">
+                            <label class="form-check-label opt4" id="option1">
+                              Default checked radio
+                            </label>
+                          </div>
+                    </div>
+                </div>
+                <div class="next-question-btn">
+                    <button type="button" class="btn1" onclick=submit()>submit</button>
+                </div>
+                <!-- <div class="answers-indicators">
+                   
+                </div> -->
+            </div>           
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="result-box custom-box hide">
+                <h1>Quiz Result</h1>
+                <table>
+                    <tr>
+                        <td>Total Question</td>
+                        <td><span class="total-question">  </span></td>
+                    </tr>
+                    <tr>
+                        <td>Attempt</td>
+                        <td><span class="total-attempt"> </span></td>
+                    </tr>
+                    <tr>
+                        <td>Correct</td>
+                        <td><span class="total-correct">  </span></td>
+                    </tr>
+                    <tr>
+                        <td>Wrong</td>
+                        <td><span class="total-wrong">  </span></td>
+                    </tr>
+                    <tr>
+                        <td>Percentage</td>
+                        <td><span class="percentage"> </span></td>
+                    </tr>
+                    <tr>
+                        <td>Your Total Score</td>
+                        <td><span class="total-score">  </span></td>
+                    </tr>
+                </table>
+                <button type="button" class="btn1 " onclick="tryAgainQuiz()">Try Again</button>
+                <button type="button" class="btn1 mt-2 mt-lg-0" onclick="goToHome()">Go Home</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">Incrivel Team</a>
+    </div>
+  
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/question.js"></script>
+    <script src="assets/js/app.js"></script>
+  
+  </body>
+</html>
