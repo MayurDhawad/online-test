@@ -1,0 +1,285 @@
+----------------------
+Bootstrap-3 cdn Links
+----------------------
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+----------------------
+Bootstrap-4 cdn Links
+----------------------
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+---------------------------
+Bootstrap-4 templates link
+---------------------------
+
+https://bootstrapmade.com/bootstrap-4-templates/
+
+
+---------------
+Font-awesome-5
+---------------
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<script src="https://kit.fontawesome.com/99e618edd6.js" crossorigin="anonymous"></script>
+
+---------------
+Font-awesome-4
+---------------
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+---------------------
+Angular Owl-Carousel
+---------------------
+
+step-1=>npm install ngx-owl-carousel owl.carousel jquery --save
+
+step-2=> In project’s root folder, look for angular.json file. Add the below lines to the "styles" and "scripts"
+
+	"styles": [
+     		    "src/styles.css",
+                    "./node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
+                    "./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"
+		  ],
+
+        "scripts":[
+ 		    "./node_modules/jquery/dist/jquery.min.js",
+                    "./node_modules/owl.carousel/dist/owl.carousel.min.js"
+                  ]
+
+step-3=>Go to app.module.ts and add the below lines
+
+	import { OwlModule } from 'ngx-owl-carousel';
+
+	// Add OwlModule to imports too
+	imports: [
+	 	   BrowserModule,
+	 	   OwlModule
+		 ]
+
+step-4=>Go to app.component.ts and below lines inside export class AppComponent{}
+	to generate an array with image urls to make the carousel or slider.
+
+	mySlideOptions={items:4, margin:10, dots:false, autoplay:true ,autoplaytime:3000};
+        myCarouselOptions={items:1 ,dots:false};
+
+step-5=>Go to app.component.html and below lines to the html part of the code
+
+	<section>
+            <div class="container-fluid my-5">
+                <owl-carousel [options]="{responsive: { '0': {  items: 1, margin: 20 },'480': { items: 2,  margin: 20 },'768': { items: 3, margin: 20 },'992': { items: 3, margin: 20 }},autoplay:true, dots:false, loop:true, autoplayTimeout: 2000}"  [carouselClasses]="['owl-theme' ,'sliding']">
+                    <div class="item">
+                        <div class="card border shadow rounded">
+                           <img class="card-img-top" src="../../assets/img/chart1.png" alt="">
+                           <div class="card-img-overlay">
+                              <h6 class="card-title">BTC Index</h6>
+                              <h3 class="card-text">$6594.01</h3>
+                           </div>
+                        </div>
+                   </div>
+		   <div class="item">
+                       <div class="card border shadow rounded">
+                           <img class="card-img-top" src="../../assets/img/chart1.png" alt="">
+                           <div class="card-img-overlay">
+                               <h6 class="card-title">BTC Index</h6>
+                               <h3 class="card-text">$6594.01</h3>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="item">
+                       <div class="card border shadow rounded">
+                           <img class="card-img-top" src="../../assets/img/chart1.png" alt="">
+                           <div class="card-img-overlay">
+                               <h6 class="card-title">BTC Index</h6>
+                               <h3 class="card-text">$6594.01</h3>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="item">
+                       <div class="card border shadow rounded">
+                           <img class="card-img-top" src="../../assets/img/chart1.png" alt="">
+                           <div class="card-img-overlay">
+                               <h6 class="card-title">BTC Index</h6>
+                               <h3 class="card-text">$6594.01</h3>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="item">
+                       <div class="card border shadow rounded">
+                           <img class="card-img-top" src="../../assets/img/chart1.png" alt="">
+                           <div class="card-img-overlay">
+                               <h6 class="card-title">BTC Index</h6>
+                               <h3 class="card-text">$6594.01</h3>
+                           </div>
+                       </div>
+                   </div>
+               </owl-carousel>
+           </div>
+       </section>
+
+
+---------------------------------------------------------------------
+  How to remove header and footer for specific page
+---------------------------------------------------------------------
+
+==> https://stackoverflow.com/questions/41972593/removing-header-and-footer-when-displaying-logout-page
+  
+
+------------------------------------------
+Angular Deployment video VVVIMP
+------------------------------------------
+
+https://www.youtube.com/watch?v=PfKiBcfoh34
+
+--------------------------------------------
+How TO Use ngx-owl-carousel-o
+--------------------------------------------
+Step1 -> npm install ngx-owl-carousel-o --save
+
+Step2 -> Add styles to angular.json:
+
+       "styles": [
+             "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
+    	     "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
+		]
+
+Step4 -> Import Carousel Module in app.module.ts
+
+      import { CarouselModule } from 'ngx-owl-carousel-o';
+
+      @NgModule({
+         declarations: [
+             AppComponent,
+             RoutingComponents,
+             ]
+
+         imports: [
+             BrowserModule,
+             CarouselModule,
+             ]
+         
+Step5 -> Add this code to app.component.ts
+
+	import { Component } from '@angular/core';
+        import { OwlOptions } from 'ngx-owl-carousel-o';
+
+        @Component({
+           selector: 'app-movies',
+           templateUrl: './movies.component.html',
+           styleUrls: ['./movies.component.css']
+        }) 
+
+        export class MoviesComponent {
+
+           customOptions: OwlOptions = {
+              loop: true,
+              autoplay:true,
+              mouseDrag: true,
+              touchDrag: true,
+              pullDrag: false,
+              dots: true,
+              navSpeed: 200,
+              navText: ['', ''],
+             responsive: {
+                  0: {
+                       items: 1
+                     },
+                400: {
+                       items: 2
+                     },
+                740: {
+                       items: 3
+                     },
+                940: {
+                       items: 4
+                     }
+                 },
+                nav: true
+                }
+             }
+
+Step6 -> Add this code to app.component.html
+
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>Slide 1</ng-template>  
+        <ng-template carouselSlide>Slide 2</ng-template>  
+        <ng-template carouselSlide>Slide 3</ng-template>  
+    </owl-carousel-o>
+ 
+                        or
+
+    <owl-carousel-o [options]="customOptions">
+ 
+    <ng-container *ngFor="let slide of slidesStore">
+      	<ng-template carouselSlide [id]="slide.id">
+           <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+      	</ng-template>
+    </ng-container>
+ 
+    </owl-carousel-o>
+
+---------------------------------------------------------------------
+       Angular confirm password validator
+---------------------------------------------------------------------
+Step1:Generate directive using ng g d cnfpassword
+
+Step2:Add the directive to app.module.ts file
+
+step3:Add the following code in the cnfpassword.directive.ts file
+
+
+import { Directive, Input } from '@angular/core';
+import { NG_VALIDATORS, Validator, AbstractControl } from '@angular/forms';
+
+@Directive({
+  selector: '[appCnfpassword]',
+  providers: [{
+      provide : NG_VALIDATORS,
+      useExisting : CnfpasswordDirective,
+      multi : true
+  }]
+})
+export class CnfpasswordDirective implements Validator{
+
+  @Input()  appCnfpassword : string;
+  validate(control : AbstractControl ) : {[ key : string ] : any } | null {
+       const controlToCompare = control.parent.get(this.appCnfpassword)
+          if(controlToCompare && controlToCompare.value !== control.value){
+                return {'notEqual' : true}
+          }
+             return null;
+  }
+}
+
+
+Step4: Add this code to .html file here appCnfpassword = "password" and *ngIf="cnfpassword.errors.notEqual" are used
+
+  <div class="form-group">
+      <input type="password" #password="ngModel" [class.is-valid]="password.valid && password.touched" [class.is-invalid]="password.invalid && password.touched" [(ngModel)]=" registerUserData.password" name="password" class="form-control" placeholder="Password*" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+      <div *ngIf="password.errors && (password.valid || password.touched)">
+           <small class="text-danger" *ngIf="password.errors.required">Password is required</small>
+           <small class="text-danger" *ngIf="password.errors.pattern">Password should be 8 character ,atleast 1 Upper case,1 Lower Case ,1 Number and 1 Special character.Space are not allowed</small>
+      </div>
+  </div>
+
+  <div class="form-group">
+        <input type="password" #cnfpassword="ngModel" appCnfpassword="password" [class.is-valid]="cnfpassword.valid && cnfpassword.touched" [class.is-invalid]="cnfpassword.invalid && cnfpassword.touched" [(ngModel)]="registerUserData.cnfpassword" name="cnfpassword" class="form-control" placeholder="Confirm Password*" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <div *ngIf="cnfpassword.errors && (cnfpassword.valid || cnfpassword.touched)">
+             <small class="text-danger" *ngIf="cnfpassword.errors.required">Confirm Password is required</small>
+             <small class="text-danger" *ngIf="cnfpassword.errors.notEqual">Confirm Password must match with Password</small>
+        </div>
+  </div>
+
+
+
+
